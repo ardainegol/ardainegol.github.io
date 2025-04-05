@@ -40,14 +40,20 @@ body {
 }
 
 /* Headings */
-h1, h2, h3 {
+h1, h3 {
     margin-bottom: 0.5em;
+    font-weight: normal;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0.4em;
     font-weight: normal;
 }
 
 /* Paragraphs and list items */
 p, li {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 /* Navigation */
@@ -75,13 +81,14 @@ nav a:hover {
 
 /* Sections */
 section {
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* optional: soft divider line */
-    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-bottom: none;
 }
 
 h2 {
     margin-top: 0;
+    margin-bottom: 0.4em;
 }
 
 /* Footer */
