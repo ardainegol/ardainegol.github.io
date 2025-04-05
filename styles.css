@@ -30,7 +30,7 @@ body {
 .container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.5rem 1rem;
     width: 100%;
 }
 
@@ -53,7 +53,18 @@ h2 {
 
 /* Paragraphs and list items */
 p, li {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.4em;
+}
+
+/* Anchor links */
+a {
+    color: inherit;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent);
 }
 
 /* Navigation */
@@ -69,7 +80,7 @@ nav ul {
 nav a {
     text-decoration: none;
     font-weight: bold;
-    color: inherit; /* ← Use surrounding text color */
+    color: inherit;
     border-bottom: 2px solid transparent;
     transition: border-color 0.2s ease, color 0.2s ease;
 }
@@ -81,14 +92,8 @@ nav a:hover {
 
 /* Sections */
 section {
-    padding-bottom: 1.25rem;
-    margin-bottom: 1.25rem;
-    border-bottom: none;
-}
-
-h2 {
-    margin-top: 0;
-    margin-bottom: 0.4em;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 /* Footer */
@@ -97,14 +102,14 @@ footer {
     color: #777;
     border-top: 1px solid #ccc;
     padding-top: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
     .container {
-        padding: 1.5rem 1rem;
+        padding: 1.25rem;
     }
 
     nav ul {
