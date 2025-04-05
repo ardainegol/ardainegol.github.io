@@ -118,6 +118,12 @@ footer {
     }
 }
 
+/* Some additions */
+header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
