@@ -75,7 +75,13 @@ nav a:hover {
 
 /* Sections */
 section {
-    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* optional: soft divider line */
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin-top: 0;
 }
 
 /* Footer */
