@@ -42,7 +42,7 @@ body {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-    margin-bottom: 0.4em;
+    margin-bottom: 1em;
     font-weight: normal;
 }
 
@@ -87,8 +87,8 @@ nav a:hover {
 
 /* Sections */
 section {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 /* Footer */
