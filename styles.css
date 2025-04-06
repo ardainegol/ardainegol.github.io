@@ -148,3 +148,31 @@ header {
         border-color: #444;
     }
 }
+
+/* Horizontal list */
+.horizontal-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.horizontal-list li {
+  width: 33.33%;
+  box-sizing: border-box;
+}
+
+/* Responsive: 2 items per row on tablets */
+@media (max-width: 768px) {
+  .horizontal-list li {
+    width: 50%;
+  }
+}
+
+/* Responsive: 1 item per row on mobile */
+@media (max-width: 480px) {
+  .horizontal-list li {
+    width: 100%;
+  }
+}
