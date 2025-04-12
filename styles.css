@@ -314,3 +314,25 @@ footer {
         color: var(--accent);
     }
 }
+
+/* About Me Section - Flex Layout */
+#about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Optional: adjust the gap between text and image */
+    flex-wrap: wrap; /* So it stacks nicely on smaller devices */
+}
+
+#about .about-text {
+    flex: 1; /* Takes up available space */
+}
+
+#about .about-photo {
+    flex-shrink: 0; /* Prevents the photo from shrinking too much */
+}
+
+#about .about-photo img {
+    max-width: 300px;  /* Set a maximum width for the image (adjust as needed) */
+    border-radius: 5px; /* Optional: soft rounding on corners */
+}
