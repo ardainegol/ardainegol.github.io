@@ -20,9 +20,17 @@ body {
     background-color: var(--bg-light);
     color: var(--text-light);
     font-family: var(--font-body);
-    font-size: 16px;
+    font-size: 18px; /* Increased base font-size */
     line-height: 1.6;
     width: 100%;
+}
+
+/* Global image styling for better positioning */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Main layout container */
@@ -43,7 +51,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 1em;
     font-weight: normal;
-    font-size: 1.5rem;
+    /* Increase headings relative to the new base size */
+    font-size: 2rem;
 }
 
 /* Paragraphs and list items */
@@ -149,8 +158,8 @@ nav a:hover {
 
 /* Sections */
 section {
-    margin-bottom: 0.75rem;
-    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 /* Footer */
@@ -226,6 +235,46 @@ footer {
     }
 }
 
+/* Contact Section Styling */
+#contact-section {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
+    border: 1px solid #fff;             /* White border */
+    color: #fff;                        /* White text */
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+#contact-section label {
+    color: #fff;
+}
+
+#contact-section input,
+#contact-section textarea,
+#contact-section select {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#contact-section .submit-button {
+    background: var(--accent);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact-section .submit-button:hover {
+    background: #a04545; /* Adjust accent hover if needed */
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
@@ -259,7 +308,6 @@ footer {
     .nav-links li a,
     .menu-toggle span {
         color: var(--text-dark);
-        /* Remove the background-color property */
     }
     
     .nav-links li a:hover {
