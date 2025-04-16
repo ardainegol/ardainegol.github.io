@@ -337,9 +337,17 @@ footer {
 }
 
 /* Projects Section */
-#projects p, #projects a {
+#projects p, a {
     font-size: 1.5rem;
     line-height: 1.8;
+}
+
+#projects img {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.5rem auto;
 }
 
 #programming-languages p {
