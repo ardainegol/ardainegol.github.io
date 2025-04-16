@@ -9,19 +9,32 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="comp.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya" />
-
-    <!-- jQuery for navbar loading -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
 
   <body>
-    <!-- Dynamically loaded navbar -->
-    <div id="navbar-placeholder"></div>
-    <script>
-      $(function () {
-        $("#navbar-placeholder").load("navbar.html");
-      });
-    </script>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">Arda Inegol</a>
+        </div>
+    
+        <!-- Hamburger for mobile -->
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    
+        <!-- Nav links (desktop + mobile dropdown) -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="projects.html">Projects & Languages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
 
     <!-- Main Content -->
     <div class="container">
