@@ -145,6 +145,8 @@ nav a:hover {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    position: relative;
+    z-index: 1001;
 }
 
 .menu-toggle span {
