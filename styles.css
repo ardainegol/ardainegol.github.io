@@ -20,12 +20,11 @@ body {
     background-color: var(--bg-light);
     color: var(--text-light);
     font-family: var(--font-body);
-    font-size: 18px; /* Increased base font-size */
+    font-size: 18px;
     line-height: 1.6;
     width: 100%;
 }
 
-/* Global image styling for better positioning */
 img {
     max-width: 100%;
     height: auto;
@@ -33,7 +32,6 @@ img {
     margin: 0 auto;
 }
 
-/* Main layout container */
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -41,26 +39,21 @@ img {
     width: 100%;
 }
 
-/* Selection highlight */
 ::selection {
     background: var(--selection);
 }
 
-/* Headings */
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 1em;
     font-weight: normal;
-    /* Increase headings relative to the new base size */
     font-size: 2rem;
 }
 
-/* Paragraphs and list items */
 p, li {
     margin-bottom: 0.4em;
 }
 
-/* Anchor links */
 a {
     color: inherit;
     text-decoration: underline;
@@ -115,7 +108,7 @@ nav a:hover {
     justify-content: space-between;
 }
 
-/* Logo in Header */
+/* Logo */
 .logo a {
     text-decoration: none;
     font-size: 1.8rem;
@@ -123,11 +116,17 @@ nav a:hover {
     color: var(--text-light);
 }
 
-/* Header Navigation Menu */
+/* Header Navigation Menu - Desktop */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    flex-direction: row;
+    position: static;
+    background: none;
+    height: auto;
+    padding: 0;
+    transition: none;
 }
 
 .nav-links li a {
@@ -141,7 +140,7 @@ nav a:hover {
     color: var(--accent);
 }
 
-/* Mobile Hamburger Toggle */
+/* Hamburger Toggle - Hidden by Default */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -186,27 +185,19 @@ footer {
     box-sizing: border-box;
 }
 
-/* Responsive tweaks */
+/* Mobile Styles */
 @media (max-width: 768px) {
     .container {
         padding: 1.25rem;
     }
-    
-    nav ul {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
-}
 
-/* Responsive Header Navigation (Mobile) */
-@media (max-width: 768px) {
     .menu-toggle {
         display: flex;
     }
-    
+
     .nav-links {
         position: fixed;
-        top: 70px; /* Adjust based on header height */
+        top: 70px;
         right: -100%;
         background-color: var(--bg-light);
         flex-direction: column;
@@ -215,15 +206,14 @@ footer {
         width: 200px;
         height: calc(100% - 70px);
         transition: right 0.3s ease-in-out;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
     }
-    
+
     .nav-links.nav-active {
         right: 0;
     }
-}
 
-/* Responsive: Horizontal list items */
-@media (max-width: 768px) {
     .horizontal-list li {
         width: 50%;
     }
@@ -235,11 +225,11 @@ footer {
     }
 }
 
-/* Contact Section Styling */
+/* Contact Section */
 #contact-section {
-    background-color: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
-    border: 1px solid #fff;             /* White border */
-    color: #fff;                        /* White text */
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #fff;
+    color: #fff;
     padding: 1.5rem;
     border-radius: 5px;
     margin-bottom: 2rem;
@@ -272,36 +262,26 @@ footer {
 }
 
 #contact-section .submit-button:hover {
-    background: #a04545; /* Adjust accent hover if needed */
+    background: #a04545;
 }
 
-/* Education Section Image - Full Width */
-#education img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* About Me Section - Flex Layout */
+/* About Section Layout */
 #about .about-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px; /* Adjust the gap between text and image */
-    flex-wrap: wrap; /* Stacks nicely on smaller devices */
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 #about .about-text {
-    flex: 1; /* Takes up available space */
+    flex: 1;
 }
 
 #about .about-photo {
-    flex-shrink: 0; /* Prevents the photo from shrinking too much */
+    flex-shrink: 0;
 }
 
-/* On larger screens, prevent wrapping so that the photo stays on the right */
 @media (min-width: 769px) {
     #about .about-content {
         flex-wrap: nowrap;
@@ -310,93 +290,97 @@ footer {
 
 #about .about-photo img {
     width: 100%;
-    max-width: 400px;  /* Adjust max width if needed */
-    border-radius: 5px; /* Optional: soft rounding on corners */
+    max-width: 400px;
+    border-radius: 5px;
 }
 
-/* Education Section Image - Full Width with extra bottom margin */
+/* Education Section */
 #education img {
     width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto 1.5rem auto; /* Adds 1.5rem of margin to the bottom */
+    margin: 0 auto 1.5rem auto;
 }
 
-/* Increase the text size in the Education section */
 #education p {
-    font-size: 1.5rem;  /* Adjust value as needed */
+    font-size: 1.5rem;
     line-height: 1.8;
 }
+
 #education li {
-    font-size: 1.3rem;  /* Adjust value as needed */
+    font-size: 1.3rem;
     line-height: 1.8;
 }
 
-/* Increase the text size in the Projects section */
-#projects p, a {
-    font-size: 1.5rem;  /* Adjust value as needed */
+/* Projects Section */
+#projects p, #projects a {
+    font-size: 1.5rem;
     line-height: 1.8;
 }
 
-#programming-languages p{
-    font-size: 1.5rem;  /* Adjust value as needed */
+#programming-languages p {
+    font-size: 1.5rem;
     line-height: 1.8;
 }
+
 #programming-languages li {
-    font-size: 1.4rem;  /* Adjust value as needed */
+    font-size: 1.4rem;
     line-height: 1.8;
 }
 
-/* Increase the text size in the About Me section */
+/* About Me Section Text */
 #about p {
-    font-size: 1.8rem;  /* Adjust value as needed */
+    font-size: 1.8rem;
     line-height: 1.8;
 }
 
-/* A special highlight class for very bold, bright text */
+/* Highlight Text */
 .highlight {
-    font-weight: 900;     /* Heavier than standard "bold" (700) */
-    color: #fff;          /* Pure white text for maximum contrast */
-    letter-spacing: 0.5px;/* Slight spacing to make it pop */
-}  
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
 
-/* Dark mode */
+/* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--bg-dark);
         color: var(--text-dark);
     }
-    
+
     nav a {
         color: var(--text-dark);
     }
-    
+
     nav a:hover {
         color: var(--accent);
     }
-    
+
     ::selection {
         background: var(--accent);
     }
-    
+
     footer {
         color: #999;
         border-color: #444;
     }
-    
+
     .site-header {
         background-color: var(--bg-dark);
     }
-    
-    /* Avoid color conflicts in dark mode */
+
     .logo a,
     .nav-links li a,
     .menu-toggle span {
         color: var(--text-dark);
     }
-    
+
     .nav-links li a:hover {
         color: var(--accent);
+    }
+
+    .nav-links {
+        background-color: var(--bg-dark);
     }
 }
