@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
+    <title>Arda Inegol</title>
 
     <!-- CSS & Fonts -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="comp.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya:400,500,600,700&display=swap" />
   </head>
 
   <body>
@@ -18,42 +18,69 @@
         <div class="logo">
           <a href="index.html">Arda Inegol</a>
         </div>
-    
-        <!-- Hamburger for mobile -->
+
         <div class="menu-toggle" id="menu-toggle">
           <span></span>
           <span></span>
           <span></span>
         </div>
-    
-        <!-- Nav links (desktop + mobile dropdown) -->
+
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">About Me</a></li>
+          <li><a href="index.html">About</a></li>
           <li><a href="education.html">Education & Skills</a></li>
           <li><a href="projects.html">Projects</a></li>
         </ul>
       </div>
     </header>
 
-    <!-- Main Content -->
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero-greeting">Welcome</p>
+      <h1>I'm <span class="accent">Arda Inegol</span></h1>
+      <p class="hero-subtitle">
+        ECE student at Rice University building things at the intersection of
+        silicon and systems, from custom processors to embedded firmware.
+      </p>
+      <div class="hero-cta">
+        <a href="projects.html" class="btn btn-primary">View My Work</a>
+        <a href="education.html" class="btn btn-outline">Education & Skills</a>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- About Cards -->
     <div class="container">
-      <section id="about">
-        <div class="about-content">
-          <div class="about-text">
-            <p>
-            <span class="highlight">My name is Arda Inegol.</span> I am an ECE student at Rice University passionate about
-              hardware engineering. My main interests lie in ASIC and PCB design.
-            </p>
-            <img src="index_im2.jpg" alt="ASIC Photo" style="max-width:480px;" />
+      <p class="section-label">What I Do</p>
+      <h2 class="section-title">Hardware Engineering & Design</h2>
+      <p class="section-desc">
+        My focus areas span ASIC design, FPGA development, PCB layout,
+        and embedded systems. I enjoy turning ideas into physical, working hardware.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <img src="index_im1.png" alt="ASIC design work" />
+          <div class="about-card-body">
+            <h3>ASIC & Digital Design</h3>
+            <p>Designing custom digital circuits from RTL through physical layout using industry tools like Cadence Virtuoso and Innovus.</p>
           </div>
-          <img src="index_im1.png" alt="ASIC Photo3" style="max-width:580px;" />
         </div>
-        <p>
-          </p>
-      </section>
+        <div class="about-card">
+          <img src="index_im2.jpg" alt="Hardware lab work" />
+          <div class="about-card-body">
+            <h3>Embedded & PCB Systems</h3>
+            <p>Bringing designs to life on real hardware: programming microcontrollers, designing PCBs, and validating on FPGA boards.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- JavaScript for mobile toggle -->
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Arda Inegol. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

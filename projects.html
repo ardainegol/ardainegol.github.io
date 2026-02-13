@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
+    <title>Projects - Arda Inegol</title>
 
-    <!-- CSS & Fonts -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="comp.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya:400,500,600,700&display=swap" />
   </head>
 
   <body>
@@ -18,36 +17,78 @@
         <div class="logo">
           <a href="index.html">Arda Inegol</a>
         </div>
-    
-        <!-- Hamburger for mobile -->
+
         <div class="menu-toggle" id="menu-toggle">
           <span></span>
           <span></span>
           <span></span>
         </div>
-    
-        <!-- Nav links (desktop + mobile dropdown) -->
+
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">About Me</a></li>
+          <li><a href="index.html">About</a></li>
           <li><a href="education.html">Education & Skills</a></li>
           <li><a href="projects.html">Projects</a></li>
         </ul>
       </div>
     </header>
 
-    <!-- Main Content (Projects & Languages) -->
+    <!-- Content -->
     <div class="container">
-      <section id="projects">
-        <p>Check out some of my work below:</p>
-        
+      <p class="section-label">Portfolio</p>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-desc">
+        A selection of hardware and embedded systems projects built from the ground up.
+      </p>
+
+      <!-- Project 1: Single-Cycle Processor (text left, image right) -->
+      <div class="project-card">
+        <div class="project-info">
+          <h3>16-Bit Single-Cycle Processor</h3>
+          <p>
+            Custom-built single-cycle 16-bit processor capable of complex arithmetic
+            and logic operations. Engineered the full processor core in Verilog and Assembly,
+            simulated with AMD Vivado waveform analysis, and validated on a Xilinx Spartan-7
+            FPGA board to confirm real-hardware functionality.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Verilog</span>
+            <span class="skill-tag">FPGA Programming</span>
+            <span class="skill-tag">AMD Vivado</span>
+            <span class="skill-tag">Assembly</span>
+          </div>
+        </div>
+        <div class="project-image">
+          <img src="IMG_9605.jpg" alt="16-bit single-cycle processor" />
+        </div>
+      </div>
+
+      <!-- Project 2: LED Digital Clock (text right, image left) -->
+      <div class="project-card reverse">
+        <div class="project-info">
+          <h3>Embedded LED Digital Clock</h3>
+          <p>
+            Developed embedded C firmware for a MSPM0G3507 microcontroller, configuring
+            GPIO and IOMUX registers to drive a 24-LED clock PCB. Implemented a layered
+            state-machine architecture with timing-accurate 1 Hz logic to independently
+            control inner and outer LED rings for minute and hour display, with multiple
+            switchable clock modes and PWM.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Embedded C</span>
+            <span class="skill-tag">PCB Design</span>
+            <span class="skill-tag">MSPM0+ Microcontroller</span>
+          </div>
+        </div>
+        <div class="project-image">
+          <img src="mspm.jpg" alt="Embedded LED digital clock" />
+        </div>
+      </div>
 
     </div>
 
     <!-- Footer -->
     <footer>
       <p>&copy; 2025 Arda Inegol. All rights reserved.</p>
-      <p>Website created by Arda Inegol.</p>
-      <p>Last updated: April 2025</p>
     </footer>
 
     <script src="script.js"></script>

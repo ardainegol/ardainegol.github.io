@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
+    <title>Education & Skills - Arda Inegol</title>
 
-    <!-- CSS & Fonts -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="comp.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya:400,500,600,700&display=swap" />
   </head>
 
   <body>
@@ -18,72 +17,82 @@
         <div class="logo">
           <a href="index.html">Arda Inegol</a>
         </div>
-    
-        <!-- Hamburger for mobile -->
+
         <div class="menu-toggle" id="menu-toggle">
           <span></span>
           <span></span>
           <span></span>
         </div>
-    
-        <!-- Nav links (desktop + mobile dropdown) -->
+
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">About Me</a></li>
+          <li><a href="index.html">About</a></li>
           <li><a href="education.html">Education & Skills</a></li>
           <li><a href="projects.html">Projects</a></li>
         </ul>
       </div>
-    </header>  
+    </header>
 
-    <!-- Main Content (Education) -->
+    <!-- Content -->
     <div class="container">
-      <section id="education">
-        <img src="ricephoto.jpg" alt="Rice Photo" style="max-width:960px;" />
-        <p>
-          I am pursuing a Bachelor of Science in <span class="highlight">Electrical and 
-          Computer Engineering</span> at Rice University in Houston, Texas.
-        </p>
-        <p>I am familiar with the following programming languages:</p>
-        <ul class="horizontal-list">
-          <li><span class="highlight">Python</span></li>
-          <li><span class="highlight">Verilog</span></li>
-          <li>Embedded C</li>
-          <li>MATLAB</li>
-          <li>Assembly</li>
-          <li>C++</li>
-          <li>HTML</li>
-          <li>LaTex</li>
-          <li>CSS</li>
-        </ul>
-        <p>I am familiar with the following software tools:</p>
-        <ul class="horizontal-list">
-          <li><span class="highlight">Cadence Virtuoso/Innovus</span></li>
-          <li><span class="highlight">LTSpice/PSpice</span></li>
-          <li>Siemens Questa One Sim</li>
-          <li>AMD Vivado</li>
-          <li>KiCad</li>
-          <li>AutoCAD</li>
-          <li>LabVIEW</li>
-          <li>CCStudio</li>
-          <li>Waveforms</li>
-        </ul>
-        <p>Below are some of the courses I have taken so far:</p>
-        <ul class="horizontal-list">
-          <li>Signals, Systems and Transforms</li>
-          <li><span class="highlight">VLSI Systems Design</span></li>
-          <li><span class="highlight">Implementation of Digital Systems</span></li>
-          <li>Digital Logic Design</li>
-          <li>Data Science and Dynamical Systems</li>
-          <li>Honors Mathematical Statistics</li>
-        </ul>
-      </section>
+      <p class="section-label">Education</p>
+      <h2 class="section-title">Rice University</h2>
+
+      <img src="ricephoto.jpg" alt="Rice University Campus" class="edu-hero-img" />
+
+      <p class="edu-intro">
+        Pursuing a <span class="highlight">Bachelor of Science in Electrical and Computer Engineering</span>
+        at Rice University in Houston, Texas.
+      </p>
+
+      <!-- Languages -->
+      <div class="edu-section">
+        <h2>Programming Languages</h2>
+        <div class="tag-grid">
+          <span class="tag featured">Python</span>
+          <span class="tag featured">Verilog</span>
+          <span class="tag">Embedded C</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">Assembly</span>
+          <span class="tag">C++</span>
+          <span class="tag">HTML</span>
+          <span class="tag">LaTeX</span>
+          <span class="tag">CSS</span>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="edu-section">
+        <h2>Software & Tools</h2>
+        <div class="tag-grid">
+          <span class="tag featured">Cadence Virtuoso / Innovus</span>
+          <span class="tag featured">LTSpice / PSpice</span>
+          <span class="tag">Siemens Questa One Sim</span>
+          <span class="tag">AMD Vivado</span>
+          <span class="tag">KiCad</span>
+          <span class="tag">AutoCAD</span>
+          <span class="tag">LabVIEW</span>
+          <span class="tag">CCStudio</span>
+          <span class="tag">Waveforms</span>
+        </div>
+      </div>
+
+      <!-- Coursework -->
+      <div class="edu-section">
+        <h2>Relevant Coursework</h2>
+        <div class="tag-grid">
+          <span class="tag featured">VLSI Systems Design</span>
+          <span class="tag featured">Implementation of Digital Systems</span>
+          <span class="tag">Signals, Systems and Transforms</span>
+          <span class="tag">Digital Logic Design</span>
+          <span class="tag">Data Science and Dynamical Systems</span>
+          <span class="tag">Honors Mathematical Statistics</span>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer>
       <p>&copy; 2025 Arda Inegol. All rights reserved.</p>
-      <p>Website created by Arda Inegol.</p>
-      <p>Last updated: April 2025</p>
     </footer>
 
     <script src="script.js"></script>
