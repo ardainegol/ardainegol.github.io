@@ -7,7 +7,9 @@
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="comp.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya:400,500,600,700&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
   </head>
 
   <body>
@@ -35,52 +37,36 @@
     <!-- Content -->
     <div class="container">
       <p class="section-label">Portfolio</p>
-      <h2 class="section-title">Featured Projects</h2>
+      <h2 class="section-title">ASIC & VLSI Projects</h2>
       <p class="section-desc">
-        A selection of hardware and embedded systems projects built from the ground up.
+        Custom digital IC designs built from the ground up using industry standard EDA toolchains and software.
       </p>
 
-      <!-- Project 1: Single-Cycle Processor (text left, image right) -->
+      <!-- Project 1: Penalty Shootout ASIC -->
       <div class="project-card">
         <div class="project-info">
-          <h3>16-Bit Single-Cycle Processor</h3>
+          <h3>Penalty Shootout Game ASIC</h3>
           <p>
-            Custom-built single-cycle 16-bit processor capable of complex arithmetic
-            and logic operations. Engineered the full processor core in Verilog and Assembly,
-            simulated with AMD Vivado waveform analysis, and validated on a Xilinx Spartan-7
-            FPGA board to confirm real-hardware functionality.
+            Designed a fully operational penalty shootout game ASIC targeting approximately
+            7,000 transistors. Implemented LFSR-based pseudo-random number generation for
+            unpredictable shot placement alongside register-level multiplication for game logic.
+            Wrote FSM controller and datapath modules in Verilog, simulated in QuestaSim to
+            verify correct operation, and modeled the complete transistor-level schematic and
+            physical layout in Cadence Innovus with synthesis via Synopsys Design Compiler. 
+            Performed routing and filling in Magic VLSI using a 64 pin package and post-layout verification using IRSIM 
+            to ensure robust performance.
           </p>
           <div class="skill-tags">
             <span class="skill-tag">Verilog</span>
-            <span class="skill-tag">FPGA Programming</span>
-            <span class="skill-tag">AMD Vivado</span>
-            <span class="skill-tag">Assembly</span>
+            <span class="skill-tag">Magic VLSI</span>
+            <span class="skill-tag">Cadence Innovus</span>
+            <span class="skill-tag">Synopsys DC</span>
+            <span class="skill-tag">QuestaSim</span>
+            <span class="skill-tag">IRSIM</span>
           </div>
         </div>
         <div class="project-image">
-          <img src="IMG_9605.jpg" alt="16-bit single-cycle processor" />
-        </div>
-      </div>
-
-      <!-- Project 2: LED Digital Clock (text right, image left) -->
-      <div class="project-card reverse">
-        <div class="project-info">
-          <h3>Embedded LED Digital Clock</h3>
-          <p>
-            Developed embedded C firmware for a MSPM0G3507 microcontroller, configuring
-            GPIO and IOMUX registers to drive a 24-LED clock PCB. Implemented a layered
-            state-machine architecture with timing-accurate 1 Hz logic to independently
-            control inner and outer LED rings for minute and hour display, with multiple
-            switchable clock modes and PWM.
-          </p>
-          <div class="skill-tags">
-            <span class="skill-tag">Embedded C</span>
-            <span class="skill-tag">PCB Design</span>
-            <span class="skill-tag">MSPM0+ Microcontroller</span>
-          </div>
-        </div>
-        <div class="project-image">
-          <img src="mspm.jpg" alt="Embedded LED digital clock" />
+          <img src="soccer_vlsi.png" alt="Penalty Shootout ASIC layout" />
         </div>
       </div>
 
@@ -88,7 +74,7 @@
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Arda Inegol. All rights reserved.</p>
+      <p>&copy; 2026 Arda Inegol. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

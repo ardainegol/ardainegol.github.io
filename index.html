@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arda Inegol</title>
 
-    <!-- CSS & Fonts -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="comp.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya:400,500,600,700&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
   </head>
 
   <body>
@@ -35,11 +36,11 @@
 
     <!-- Hero -->
     <section class="hero">
-      <p class="hero-greeting">Welcome</p>
+      <p class="hero-greeting">ASIC / VLSI / Digital IC</p>
       <h1>I'm <span class="accent">Arda Inegol</span></h1>
       <p class="hero-subtitle">
-        ECE student at Rice University building things at the intersection of
-        silicon and systems, from custom processors to embedded firmware.
+        ECE student at Rice University specializing in ASIC design and VLSI.
+        RTL, place and route, tape-out.
       </p>
       <div class="hero-cta">
         <a href="projects.html" class="btn btn-primary">View My Work</a>
@@ -49,36 +50,66 @@
 
     <hr class="divider" />
 
-    <!-- About Cards -->
+    <!-- About Section -->
     <div class="container">
       <p class="section-label">What I Do</p>
-      <h2 class="section-title">Hardware Engineering & Design</h2>
+      <h2 class="section-title">ASIC & VLSI Design</h2>
       <p class="section-desc">
-        My focus areas span ASIC design, FPGA development, PCB layout,
-        and embedded systems. I enjoy turning ideas into physical, working hardware.
+        From RTL specification through physical layout and tape-out, my work covers the full
+        custom IC design stack using industry-standard EDA toolchains.
       </p>
 
+      <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <span class="stat-value">RTL &rarr; GDSII</span>
+          <span class="stat-label">Full physical design flow</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">~7,000</span>
+          <span class="stat-label">Transistors designed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">Cadence &middot; Synopsys</span>
+          <span class="stat-label">Industry EDA toolchain</span>
+        </div>
+      </div>
+
+      <!-- Focus Cards -->
       <div class="about-grid">
         <div class="about-card">
-          <img src="index_im1.png" alt="ASIC design work" />
+          <img src="250.png" alt="ASIC design layout" />
           <div class="about-card-body">
-            <h3>ASIC & Digital Design</h3>
-            <p>Designing custom digital circuits from RTL through physical layout using industry tools like Cadence Virtuoso and Innovus.</p>
+            <h3>RTL & Digital Design</h3>
+            <p>Writing synthesizable Verilog for custom digital blocks; FSMs, datapaths, arithmetic units. Taking designs from specification through logic synthesis.</p>
           </div>
         </div>
         <div class="about-card">
-          <img src="index_im2.jpg" alt="Hardware lab work" />
+          <img src="soccer_ques.png" alt="Physical IC layout" />
           <div class="about-card-body">
-            <h3>Embedded & PCB Systems</h3>
-            <p>Bringing designs to life on real hardware: programming microcontrollers, designing PCBs, and validating on FPGA boards.</p>
+            <h3>Physical Implementation & Verification</h3>
+            <p>Placement & routing, DRC/LVS checks, and functional simulation with QuestaSim and/or Cadence Xcelium to verify correctness before tapeout.</p>
           </div>
+        </div>
+      </div>
+
+      <!-- EDA Toolchain Strip -->
+      <div class="tools-strip">
+        <p class="tools-strip-label">EDA Toolchain</p>
+        <div class="tools-list">
+          <span class="tool-item">Cadence Innovus</span>
+          <span class="tool-item">Cadence Xcelium</span>
+          <span class="tool-item">Cadence Genus</span>
+          <span class="tool-item">Synopsys Design Compiler</span>
+          <span class="tool-item">QuestaSim</span>
+          <span class="tool-item">Magic VLSI</span>
         </div>
       </div>
     </div>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Arda Inegol. All rights reserved.</p>
+      <p>&copy; 2026 Arda Inegol. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
