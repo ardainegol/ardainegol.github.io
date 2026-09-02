@@ -47,26 +47,97 @@
         <div class="project-info">
           <h3>Penalty Shootout Game ASIC</h3>
           <p>
-            Designed a fully operational penalty shootout game ASIC targeting approximately
-            7,000 transistors. Implemented LFSR-based pseudo-random number generation for
-            unpredictable shot placement alongside register-level multiplication for game logic.
-            Wrote FSM controller and datapath modules in Verilog, simulated in QuestaSim to
-            verify correct operation, and modeled the complete transistor-level schematic and
-            physical layout in Cadence Innovus with synthesis via Synopsys Design Compiler. 
-            Performed routing and filling in Magic VLSI using a 64 pin package and post-layout verification using IRSIM 
-            to ensure robust performance.
+            Designed and implemented a fully operational FIFA-inspired penalty shootout game 
+            ASIC containing 7,158 transistors and 859 cells across 19,375 square microns of core area. 
+            Wrote the FSM controller, datapath, and top modules in Verilog, integrating LFSR-based 
+            pseudo-random number generation for unpredictable shot placement alongside register-level 
+            multiplication. Functional correctness was verified in QuestaSim using a custom testbench, 
+            followed by synthesis in Synopsys Design Compiler targeting a 0.5 micron process. 
+            Executed place and route in Cadence Innovus, routing the 54-pin core into a 64-pin padframe 
+            with Magic VLSI, and validated operation through the padframe using IRSIM. The final design 
+            achieved 4.62 ns of slack while consuming 10.93 mW of power, with full system testing modeled 
+            via an FPGA board and LED matrix.
           </p>
           <div class="skill-tags">
             <span class="skill-tag">Verilog</span>
             <span class="skill-tag">Magic VLSI</span>
             <span class="skill-tag">Cadence Innovus</span>
             <span class="skill-tag">Synopsys DC</span>
-            <span class="skill-tag">QuestaSim</span>
+            <span class="skill-tag">Siemens Questa</span>
             <span class="skill-tag">IRSIM</span>
           </div>
         </div>
         <div class="project-image">
-          <img src="soccer_vlsi.png" alt="Penalty Shootout ASIC layout" />
+          <img src="Integration.jpg" alt="Penalty Shootout ASIC layout" />
+        </div>
+      </div>
+
+      <!-- Project 2: CORDIC 800 MHz -->
+      <div class="project-card">
+        <div class="project-info">
+          <h3>800 MHz Pipelined CORDIC</h3>
+          <p>
+            Designed and implemented a pipelined CORDIC algorithm in C++ targeting a 45 nm ASIC using Siemens Catapult HLS. 
+            Performed SkyWater 130 nm synthesis in Cadence Genus, place and route in Cadence Innovus, and functional 
+            verification in Cadence Xcelium using a Verilog testbench. Used Cadence Quantus for parasitic extraction and 
+            Tempus for post-layout timing analysis, achieving 93 ps of slack under an 800 MHz timing constraint. 
+            Final core contained approximately 2,584 transistors, occupied 3,548 square micron of area, 
+            and consumed 2.1 mW of power.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Siemens Catapult</span>
+            <span class="skill-tag">Cadence Innovus</span>
+            <span class="skill-tag">Cadence Xcelium</span>
+            <span class="skill-tag">Cadence Genus</span>
+            <span class="skill-tag">Cadence Tempus</span>
+            <span class="skill-tag">Cadence Quantus</span>
+          </div>
+        </div>
+        <div class="project-image">
+          <img src="genus800.png" alt="CORDIC genus synthesis" />
+        </div>
+      </div>
+      <!-- Project 3: HardGPT -->
+      <div class="project-card">
+        <div class="project-info">
+          <h3>HardGPT</h3>
+          <p>
+            Developed bare-metal C firmware to execute a 3-layer AI transformer on-chip without an FPU by fitting 
+            the model into 32 KB SRAM using 8-bit (int8) quantization and replacing slow mathematical operations with 
+            integer bit-hacks. Designed a custom 2-layer PCB in KiCad incorporating a dollar ARM Cortex-M0+ microcontroller, 
+            AMS1117 voltage regulator, I²C LCD display, LEDs, and tactile button controls. 
+            Successfully got the board fabricated and validated real-time character generation through hardware testing.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Embedded C</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">KiCad</span>
+            <span class="skill-tag">PCB Design and Fabrication</span>
+            <span class="skill-tag">MSPM0+ Microcontroller</span>
+          </div>
+        </div>
+        <div class="project-image">
+          <img src="hardgpt.jpg" alt="HardGPT PCB" />
+        </div>
+      </div>
+      <!-- Project 4: Single Cycle 16-bit Processor -->
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Single Cycle 16-bit Processor</h3>
+          <p>
+            Used Verilog to create a single cycle 16-bit processor that supports and performs complex arithmetic 
+            and logic operations. Simulated the build with AMD Vivado and Xilinx Spartan-7 FPGA board to verify its functionality.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">AMD Vivado</span>
+            <span class="skill-tag">Verilog</span>
+            <span class="skill-tag">FPGA Programming</span>
+            <span class="skill-tag">Assembly Language</span>
+          </div>
+        </div>
+        <div class="project-image">
+          <img src="boolean.jpg" alt="Single Cycle Processor" />
         </div>
       </div>
 
