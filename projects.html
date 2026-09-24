@@ -52,8 +52,7 @@
             Wrote the FSM controller, datapath, and top modules in Verilog, integrating LFSR-based 
             pseudo-random number generation for unpredictable shot placement alongside register-level 
             multiplication. Functional correctness was verified in QuestaSim using a custom testbench, 
-            followed by synthesis in Synopsys Design Compiler targeting a 0.5 micron process. 
-            Executed place and route in Cadence Innovus, routing the 54-pin core into a 64-pin padframe 
+            followed by synthesis in Synopsys Design Compiler. Executed place and route in Cadence Innovus, routing the 54-pin core into a 64-pin padframe 
             with Magic VLSI, and validated operation through the padframe using IRSIM. The final design 
             achieved 4.62 ns of slack while consuming 10.93 mW of power, with full system testing modeled 
             via an FPGA board and LED matrix.
@@ -78,7 +77,7 @@
           <h3>800 MHz Pipelined CORDIC</h3>
           <p>
             Designed and implemented a pipelined CORDIC algorithm in C++ targeting a 45 nm ASIC using Siemens Catapult HLS. 
-            Performed SkyWater 130 nm synthesis in Cadence Genus, place and route in Cadence Innovus, and functional 
+            Performed synthesis in Cadence Genus, place and route in Cadence Innovus, and functional 
             verification in Cadence Xcelium using a Verilog testbench. Used Cadence Quantus for parasitic extraction and 
             Tempus for post-layout timing analysis, achieving 93 ps of slack under an 800 MHz timing constraint. 
             Final core contained approximately 2,584 transistors, occupied 3,548 square micron of area, 
